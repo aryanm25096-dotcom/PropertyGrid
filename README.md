@@ -1,12 +1,4 @@
-**How to use this:**
 
-1.  In your `PropertyGrid` folder, create a new file named `README.md`.
-2.  Copy and paste the text below into that new file.
-3.  Save it, and then push it to GitHub. GitHub will automatically display this on your repository's homepage.
-
------
-
-(Copy everything below this line)
 
 # PropertyGrid - Real Estate Website
 
@@ -79,3 +71,4 @@ This repository contains a responsive, 4-page static website:
   * **Subject:** SNW (Capstone Project)
   * **Mentor:** Swati Priya sir
   * **Reference Website:** `https://www.99acres.com/`
+
