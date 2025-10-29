@@ -1,0 +1,180 @@
+/* ================== GLOBAL STYLES & VARIABLES ================== */
+/* A good practice is to set variables for your main colors */
+:root {
+    --primary-color: #005A9C; /* A nice professional blue */
+    --secondary-color: #f4f4f4; /* Light gray background */
+    --text-dark: #333;
+    --text-light: #fff;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+img {
+    width: 100%; /* Makes images responsive */
+    display: block;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers your main content */
+    padding: 20px;
+}
+
+/* ================== HEADER / NAVIGATION ================== */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links apart */
+    align-items: center;
+    background-color: var(--text-light);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg'); /* You'll need a 'hero-bg.jpg' in your images folder */
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; /* Allows it to stack on small screens */
+}
+
+.hero-search-form input,
+.hero-search-form select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    margin: 5px;
+}
+
+.hero-search-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* ================== FEATURED PROPERTIES ================== */
+.featured-properties {
+    padding: 2rem 0;
+}
+
+.featured-properties h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* This container uses CSS GRID to make a responsive 3-column layout */
+.property-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ================== PROPERTY CARD (Reusable Component) ================== */
+.property-card {
+    background-color: var(--text-light);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden; /* Ensures the image corners are rounded */
+    display: flex;
+    flex-direction: column; /* Stacks image and content vertically */
+}
+
+.property-card img {
+    height: 200px; /* Fixed height for all card images */
+    object-fit: cover; /* Prevents images from stretching */
+}
+
+.property-card .card-content {
+    padding: 1rem;
+}
+
+.property-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.property-card .location {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.btn-details {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-details:hover {
+    background-color: #004a80; /* A darker blue for hover */
+}
+
+/* ================== FOOTER ================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: var(--text-light);
+    margin-top: 2rem;
+}
