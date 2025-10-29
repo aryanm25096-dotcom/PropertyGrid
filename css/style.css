@@ -178,3 +178,281 @@ footer {
     color: var(--text-light);
     margin-top: 2rem;
 }
+/* ================== LISTINGS PAGE LAYOUT ================== */
+
+/* This creates the 2-column (sidebar + grid) layout */
+.listings-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar is 1 part, grid is 3 parts */
+    gap: 2rem;
+}
+
+/* ================== FILTERS SIDEBAR ================== */
+.filters {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content; /* Makes it only as tall as its content */
+}
+
+.filters h3 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Styles the checkboxes */
+.filter-group label {
+    display: block; /* Makes each checkbox on a new line */
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Static button for styling */
+.btn-apply-filters {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-apply-filters:hover {
+    background-color: #004a80;
+}
+
+
+/* ================== RESULTS GRID ================== */
+.results-grid h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* We reuse .property-card, so we just need to style the container */
+.results-grid {
+    display: grid;
+    /* This is just like the homepage, making it responsive */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+/* ================== PROPERTY DETAILS PAGE ================== */
+
+/* This creates the 2-column layout for the details */
+.property-details-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Images column is 2x width of info */
+    gap: 2rem;
+}
+
+/* ================== COLUMN 1: IMAGES ================== */
+.details-images .main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.thumbnail-gallery .thumbnail {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer; /* Makes it look clickable, even if not functional yet */
+}
+
+/* ================== COLUMN 2: INFO ================== */
+.details-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.details-info .price {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.info-group {
+    margin-bottom: 2rem;
+}
+
+.info-group h3 {
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.details-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.details-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Styles the amenities into 2 columns */
+.amenities-list {
+    list-style: '✔ '; /* Adds a checkmark before each item */
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2-column layout for amenities */
+    gap: 0.5rem;
+}
+
+.amenities-list li {
+    font-size: 1.1rem;
+}
+
+/* ================== STATIC AGENT FORM ================== */
+.agent-form {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.agent-form h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.agent-form input,
+.agent-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for 100% width */
+}
+
+.agent-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agent-form button:hover {
+    background-color: #004a80;
+}
+/* ================== CONTACT PAGE ================== */
+
+.contact-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact-page .contact-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+/* Creates the 2-column layout */
+.contact-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Form is 2x width of info */
+    gap: 3rem;
+}
+
+/* ================== COLUMN 1: CONTACT FORM ================== */
+.contact-form {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for 100% width */
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #004a80;
+}
+
+/* ================== COLUMN 2: CONTACT INFO ================== */
+.contact-info {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info strong {
+    font-size: 1.2rem;
+}
