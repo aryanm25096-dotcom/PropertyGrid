@@ -82,3 +82,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // This is the closing brace for the DOMContentLoaded listener
 });
+// Wait for the entire page to load before running the script
+document.addEventListener("DOMContentLoaded", function() {
+
+    // --- Task 1: Homepage Search Redirect ---
+    const heroSearchForm = document.querySelector(".hero-search-form");
+    if (heroSearchForm) {
+        // ... (your existing code for Task 1) ...
+    }
+
+
+    // --- Task 2: Contact Form Validation ---
+    const contactForm = document.querySelector("#contact-form");
+    if (contactForm) {
+        // ... (your existing code for Task 2) ...
+    }
+
+
+    // --- Task 3: Property Details Image Gallery ---
+    
+    // Select the main image and all the thumbnail images
+    const mainImage = document.querySelector("#main-property-image");
+    const thumbnails = document.querySelectorAll(".thumbnail-img");
+
+    // Check if we are on the details page (if mainImage exists)
+    if (mainImage && thumbnails.length > 0) {
+        
+        // Loop through every thumbnail image
+        thumbnails.forEach(function(thumbnail) {
+            
+            // Add a click event listener to each one
+            thumbnail.addEventListener("click", function() {
+                
+                // 1. Get the 'src' (image URL) of the thumbnail that was clicked
+                const newImageSrc = thumbnail.src;
+                
+                // 2. Set the 'src' of the main image to that URL
+                mainImage.src = newImageSrc;
+            });
+        });
+    }
+
+}); // <-- This is the final closing bracket
