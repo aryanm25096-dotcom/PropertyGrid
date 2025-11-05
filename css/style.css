@@ -456,3 +456,22 @@ footer {
 .contact-info strong {
     font-size: 1.2rem;
 }
+/* ================== FORM VALIDATION STYLES ================== */
+
+/* This is the style for the error message text (hidden by default) */
+.error-message {
+    color: #D32F2F; /* A strong red color */
+    font-size: 0.9rem;
+    display: none; /* Hidden! */
+    margin-top: 5px;
+}
+
+/* This class will be ADDED BY JAVASCRIPT to show the message */
+.error-message.show {
+    display: block; /* Show the error message */
+}
+
+/* This class will be ADDED BY JAVASCRIPT to the input field */
+.input-error {
+    border: 2px solid #D32F2F; /* Red border */
+}
