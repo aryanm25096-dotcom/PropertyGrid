@@ -24,20 +24,20 @@ a {
 }
 
 img {
-    width: 100%; /* Makes images responsive */
+    width: 100%; /* will make all the images responsive */
     display: block;
 }
 
 main {
     max-width: 1200px;
-    margin: 0 auto; /* Centers your main content */
+    margin: 0 auto; /* will center the main content */
     padding: 20px;
 }
 
-/* ================== HEADER / NAVIGATION ================== */
+/* HEADER / NAVIGATION */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Pushes logo and links apart */
+    justify-content: space-between; /* will push logo and links apart */
     align-items: center;
     background-color: var(--text-light);
     padding: 1rem 2rem;
@@ -70,7 +70,7 @@ main {
     color: var(--primary-color);
 }
 
-/* ================== HERO SECTION ================== */
+/* HERO SECTION */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
     background-size: cover;
@@ -84,7 +84,7 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 1.5rem;
-    flex-wrap: wrap; /* Allows it to stack on small screens */
+    flex-wrap: wrap; /* this allows it to stack on small screens */
 }
 
 .hero-search-form input,
@@ -105,7 +105,7 @@ main {
     margin: 5px;
 }
 
-/* ================== FEATURED PROPERTIES ================== */
+/* FEATURED PROPERTIES */
 .featured-properties {
     padding: 2rem 0;
 }
@@ -116,26 +116,26 @@ main {
     font-size: 2rem;
 }
 
-/* This container uses CSS GRID to make a responsive 3-column layout */
+/* this container will make a responsive 3-column layout using css grid*/
 .property-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
-/* ================== PROPERTY CARD ================== */
+/* PROPERTY CARD */
 .property-card {
     background-color: var(--text-light);
     border-radius: 8px;
     box-shadow: var(--card-shadow);
-    overflow: hidden; /* Ensures the image corners are rounded */
+    overflow: hidden; /* will make the image corners rounded */
     display: flex;
-    flex-direction: column; /* Stacks image and content vertically */
+    flex-direction: column; /* it will stack image and content vertically */
 }
 
 .property-card img {
-    height: 200px; /* Fixed height for all card images */
-    object-fit: cover; /* Prevents images from stretching */
+    height: 200px; /* it will fix height for all card images */
+    object-fit: cover; /* prevents images from stretching */
 }
 
 .property-card .card-content {
@@ -165,10 +165,10 @@ main {
 }
 
 .btn-details:hover {
-    background-color: #004a80; /* A darker blue for hover */
+    background-color: #004a80; /* a darker blue for hover */
 }
 
-/* ================== FOOTER ================== */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -176,8 +176,8 @@ footer {
     color: var(--text-light);
     margin-top: 2rem;
 }
-
-/* ================== LISTINGS PAGE LAYOUT ================== */
+/* 
+LISTINGS PAGE LAYOUT */
 
 /* This creates the 2-column (sidebar + grid) layout */
 .listings-container {
@@ -186,7 +186,7 @@ footer {
     gap: 2rem;
 }
 
-/* ================== FILTERS SIDEBAR ================== */
+/* FILTERS SIDEBAR */
 .filters {
     background-color: var(--secondary-color);
     padding: 1.5rem;
@@ -209,14 +209,14 @@ footer {
     margin-bottom: 0.75rem;
 }
 
-/* Styles the checkboxes */
+/* will style the checkboxes */
 .filter-group label {
-    display: block; /* Makes each checkbox on a new line */
+    display: block; /* will make each checkbox on a new line */
     margin-bottom: 0.5rem;
     color: #555;
 }
 
-/* Static button for styling */
+/* static button for styling */
 .btn-apply-filters {
     width: 100%;
     padding: 0.8rem;
@@ -233,7 +233,7 @@ footer {
     background-color: #004a80;
 }
 
-/* ================== RESULTS GRID ================== */
+/* RESULTS GRID */
 .results-grid h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -245,16 +245,16 @@ footer {
     gap: 1.5rem;
 }
 
-/* ================== PROPERTY DETAILS PAGE ================== */
+/* PROPERTY DETAILS PAGE */
 
-/* This creates the 2-column layout for the details */
+/* it will create a 2-column layout for the details */
 .property-details-container {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Images column is 2x width of info */
+    grid-template-columns: 2fr 1fr; /* images column is 2x width of info */
     gap: 2rem;
 }
 
-/* ================== COLUMN 1: IMAGES ================== */
+/* COLUMN 1: IMAGES */
 .details-images .main-image {
     width: 100%;
     height: auto;
@@ -274,10 +274,10 @@ footer {
     object-fit: cover;
     border: 2px solid #ddd;
     border-radius: 5px;
-    cursor: pointer; /* Makes it look clickable, even if not functional yet */
+    cursor: pointer; /* makes it look clickable, even if it is not functional yet */
 }
 
-/* ================== COLUMN 2: INFO ================== */
+/* COLUMN 2: INFO */
 .details-info h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -311,9 +311,9 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/* Styles the amenities into 2 columns */
+/* will style the amenities into 2 columns */
 .amenities-list {
-    list-style: '✔ '; /* Adds a checkmark before each item */
+    list-style: '✔ '; /* adds a checkmark before each item */
     padding-left: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2-column layout for amenities */
@@ -324,7 +324,7 @@ footer {
     font-size: 1.1rem;
 }
 
-/* ================== STATIC AGENT FORM ================== */
+/* STATIC AGENT FORM */
 .agent-form {
     background-color: var(--secondary-color);
     padding: 1.5rem;
@@ -343,7 +343,7 @@ footer {
     margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Important for 100% width */
+    box-sizing: border-box; /* important for 100% width */
 }
 
 .agent-form button {
@@ -362,7 +362,7 @@ footer {
     background-color: #004a80;
 }
 
-/* ================== CONTACT PAGE ================== */
+/* CONTACT PAGE */
 
 .contact-page h1 {
     text-align: center;
@@ -382,7 +382,7 @@ footer {
     gap: 3rem;
 }
 
-/* ================== COLUMN 1: CONTACT FORM ================== */
+/* COLUMN 1: CONTACT FORM */
 .contact-form {
     background-color: var(--secondary-color);
     padding: 2rem;
@@ -410,7 +410,7 @@ footer {
     padding: 0.8rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Important for 100% width */
+    box-sizing: border-box; /* important for 100% width */
 }
 
 .contact-form button {
@@ -429,7 +429,7 @@ footer {
     background-color: #004a80;
 }
 
-/* ================== COLUMN 2: CONTACT INFO ================== */
+/* COLUMN 2: CONTACT INFO */
 .contact-info {
     background-color: var(--primary-color);
     color: var(--text-light);
