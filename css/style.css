@@ -240,9 +240,8 @@ LISTINGS PAGE LAYOUT */
 }
 
 .results-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* PROPERTY DETAILS PAGE */
@@ -452,4 +451,10 @@ LISTINGS PAGE LAYOUT */
 
 .contact-info strong {
     font-size: 1.2rem;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
